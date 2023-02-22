@@ -1,0 +1,281 @@
+body{        
+    padding-top: 140px;
+    padding-bottom: 40px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:Helvetica;
+}
+
+h1{
+    color: red;
+    padding: 2px;
+}
+div{
+    /* border: black solid; */
+    /* display: flex; */
+}
+
+p{
+    color: black;
+    font-size: 15px;
+}
+
+.fixed-header, .fixed-footer{
+    width: 100%;
+    position: fixed;   
+    left: 0;     
+    padding: 15px 0;
+    background-color: #fff;
+    border:#d3d3d3 solid 1px;
+}
+.fixed-header{
+    top: 0;
+}
+.fixed-footer {
+    bottom: 0;
+}
+.fixed-footer p{
+    color: #707070;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+     flex-flow: wrap;
+}
+
+.logo img{
+    height: 50px;
+    width: 100px;
+    font-size: 20px;
+    font-weight: bold;
+    object-fit:contain;
+    margin-right: 30px;
+}
+
+.logo, .bar{
+    justify-content: space-between;
+}
+
+/* Search */
+.bar{
+    width:550px;
+    height:40px;
+    border-radius:100vw;
+    font-size:14px;
+    display:flex;
+    justify-content: center;
+    align-content:center;
+    border:#d3d3d3 solid 1px;
+  }
+     /* Séparation search */
+  .bar div{
+    padding:0.8rem 1.5rem;
+    transition:background 250ms ease;
+  }
+
+  .location.check-in{
+    width: 50px;
+  } 
+  .guests{
+    width: 100px;
+    position: relative; 
+  }
+  .bar p{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .guests span{
+    position:absolute;
+    top:50%;
+    right:10px;
+    transform:translateY(-50%);
+    background:#FF385C;
+    color:white;
+    font-size:0.8rem;
+    padding:0.7rem;
+    border-radius:50%;
+  }
+
+  .bar:hover{
+    box-shadow: 2px 2px 2px #d3d3d3;
+  }
+  .bar>div{
+    position:relative;
+    
+  }
+  .bar>div::before{
+  position:absolute;
+  content:"";
+  left:0;
+  top:50%;
+  transform:translateY(-50%);
+  width:1px;
+  height:55%;
+  background:hsl(0 0% 90%);
+}
+   
+/* End search */
+
+.loge:hover{
+    width: 250px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #f1f1f1;
+}
+
+.world{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+  .world img{
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+  }
+.world:hover{
+    width: 30px;
+    height: 30px;
+    color: #d3d3d3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+  .login{
+    width:80px;
+    height:40px;
+    border-radius:100vw;
+    display:flex;
+    justify-content:center ;
+    align-items:center;
+    font-size:14px;
+    border:#d3d3d3 solid 1px;
+  }
+  #traits{
+    width: 23px;
+    height: 23px;
+    margin-left: 10px;
+  }
+  .login img{
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    flex-flow: wrap;
+    margin: 5px;
+  }
+  .login:hover{
+    box-shadow: 2px 2px 2px #d3d3d3;
+  }
+
+/* Slider */
+.fixed{
+    width: 100%;
+    position: fixed;
+    left:0%;
+    top:82px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 0;
+    background-color: white;
+}
+.fixed img{
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.slide img{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.slide p{
+    color: #5C5C5C;
+    font-size: 13px;
+}
+.arrow, .filter{
+    border:#d3d3d3 solid 1px;
+}
+.arrow img{
+    width: 17px;
+    height: 17px;
+    object-fit: contain;
+}
+.arrow{
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrow:hover{
+    box-shadow: 2px 2px 2px #d3d3d3;
+  }
+.filter{
+    width: 85px;
+    height: 45px;
+    border-radius: 10px;
+    display: flex;
+    justify-content:center ;
+    align-items:center;
+}
+.filter img{
+    width: 15px;
+    height: 15px;
+    object-fit: contain;
+    flex-flow: wrap;
+    margin: 5px;
+}
+.filter p{
+    font-size: 12px;
+}
+
+/* Image + descrip */
+.global {
+    display: flex;
+    color: #2e2e2e;
+}
+.box{
+    margin: 33px;
+    align-items: flex-start;
+}
+.box img {
+    width: 285px;
+    height: 285px;
+    object-fit: cover;
+    border-radius: 15px;
+   }
+.star{
+  display: flex;
+  align-items: center;
+}
+.star img{
+  width: 12px;
+  height: 12px;
+  object-fit: contain;
+}
+.bold{
+  font-weight: bold;
+}
+span.gray{
+  color: #a1a0a0;
+  padding-top: 20px;
+}
+br {
+   line-height:22px;
+}
+
+
+
